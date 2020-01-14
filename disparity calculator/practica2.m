@@ -1,3 +1,5 @@
+%% Carga de imagenes y calculo de disparidad
+
 leftI1 = imread('images/leftImage1.png');
 rightI1 = imread('images/rightImage1.png');
 
@@ -21,7 +23,9 @@ rightI3 = imread('images/rightImage3.png');
 blockSize=11;
 maxd=15;
 disp3=blockmatching(leftI3,rightI3,blockSize,maxd);
-%%
+
+%% Mostrando los resultados
+
 subplot(3,3,1);
 imshow(leftI1);
 title("Left image");
