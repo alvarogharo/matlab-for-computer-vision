@@ -1,1 +1,2 @@
-blurdetection("./output")
+blurrer("./images", "./output");
+blurdetection("./output");
